@@ -1,0 +1,12 @@
+route_id,independent_route_decision_ACCEPT_EXCLUDE_HOLD,original_environmental_transformation_study_verified_Y_N,exact_reactant_and_product_identity_verified_Y_N,exact_environmental_isomer_stereo_and_form_verified_Y_N,route_is_direct_or_multistep,documented_matrix_and_conditions,assessment_rationale,reviewer_internal_token_no_PII_in_public_repo,signed_review_record_location_private,review_date,data_steward_authorization,status
+THR_003,,,,,,,,,,,,PENDING_NOT_APPROVED
+MOUNT25_PPDDT_TO_PPDDE,,,,,,,,,,,,PENDING_NOT_APPROVED
+THR_006,,,,,,,,,,,,PENDING_NOT_APPROVED
+MOUNT25_PPDDE_TO_PPDDMU,,,,,,,,,,,,PENDING_NOT_APPROVED
+MOUNT25_OPDDT_TO_OPDDD,,,,,,,,,,,,PENDING_NOT_APPROVED
+THR_001,,,,,,,,,,,,PENDING_NOT_APPROVED
+THR_002,,,,,,,,,,,,PENDING_NOT_APPROVED
+XIONG2023_01,,,,,,,,,,,,PENDING_NOT_APPROVED
+XIONG2023_02,,,,,,,,,,,,PENDING_NOT_APPROVED
+XIONG2023_03,,,,,,,,,,,,PENDING_NOT_APPROVED
+XIONG2023_04,,,,,,,,,,,,PENDING_NOT_APPROVED
