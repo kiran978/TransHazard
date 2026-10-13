@@ -18,6 +18,8 @@ jobs:
         run: python src/transhazard/evidence_audit.py --report outputs/expanded_evidence_audit.json
       - name: Audit 17 proposed chemical identities and 11 environmental pathways
         run: python src/transhazard/identity_review.py --report outputs/identity_pathway_gate.json --molar outputs/xiong2023_molar_PROVISIONAL_NOT_APPROVED.csv
+      - name: Audit Li 2026 and Yuan 2023 supplemental recovery hold states
+        run: python src/transhazard/new_sources_gate.py --report outputs/new_source_recovery_gate.json
       - name: Unapproved data must never enter empirical model training
         shell: bash
         run: |
@@ -37,3 +39,4 @@ jobs:
             outputs/identity_pathway_gate.json
             outputs/xiong2023_molar_PROVISIONAL_NOT_APPROVED.csv
             outputs/model_gate.json
+            outputs/new_source_recovery_gate.json
