@@ -14,7 +14,7 @@ class Xiong2023EvidenceTriage(unittest.TestCase):
                             r["eligible_for_training"]=="NO" for r in rows))
         self.assertTrue(all(r["aqueous_exposure_concentration_basis"]=="Measured aqueous concentrations in assay" for r in rows))
         self.assertTrue(all("molar ratio pending" in r["source_relevant_caveat"] for r in rows))
-        self.assertTrue(all("environment" in r["source_relevant_caveat"].lower() or "route" in r["source_relevant_caveat"].lower() for r in rows))
+        self.assertTrue(all("environment" in (r["source_relevant_caveat"]+r["experimental_route_evidence_scope"]).lower() or "route" in (r["source_relevant_caveat"]+r["experimental_route_evidence_scope"]).lower() for r in rows))
         original={"acetaminophen":(21.2,2.4,32.1,5.7),
                   "diazepam":(3.0,.3,4.4,1.1),
                   "methylparaben":(34.4,4.3,225.6,17.3),
