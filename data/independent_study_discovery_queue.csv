@@ -1,0 +1,4 @@
+study_id,source_url,family,comparison,target_endpoint,priority,reason_for_hold
+LI2026_GALAXOLIDE,https://doi.org/10.1039/D6EM00059B,synthetic musk,galaxolide to galaxolide lactone,Daphnia magna 48h LC50,HIGH,Require supplementary source-specific concentrations and unambiguous estimates
+SULFOX2023_DAPHNIA,https://doi.org/10.1021/acs.jafc.2c08748,pesticide,sulfoxaflor to reported metabolites X540 X474,Daphnia magna acute toxicity,HIGH,Require original supplementary numerical effect estimates and independent pathway evidence
+WIRZ2021_OZONATION,https://doi.org/10.1016/j.scitotenv.2020.142727,water-treatment chemistry,isoproturon or metoprolol to oxidation products,Daphnia magna 48h immobilization,SECONDARY,Most standards had no observable immobilization; numeric effect concentrations may be censored
