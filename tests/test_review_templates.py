@@ -42,5 +42,5 @@ class IndependentReviewTemplateGate(unittest.TestCase):
         self.assertEqual(len(s1),12)
         # Original six priority rows contain 3 Mount entries; the 12-source-comparison
         # Mount file must not add those 3 again as different training observations.
-        self.assertEqual(len([r for r in s1 if r["comparison_id"].startswith("MOUNT25_01")]),2)
+        self.assertEqual(len([id_ for id_ in s1 if id_.startswith("MOUNT25_01")]),2)
 if __name__=="__main__":unittest.main()
