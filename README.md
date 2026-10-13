@@ -42,3 +42,32 @@ VALIDATION_PROTOCOL.md      # scientific review and validation standards
 4. Run grouped model development and **independent** external validation only when feasibility gates pass.
 
 **Data rights:** original papers, licensed data and source PDFs are not redistributed here without license verification.
+
+
+## Active chemical-identity and environmental-pathway verification (2026-10-13)
+
+**Separate evidence dimensions, not a validated training cohort:**
+- **17 proposed reference chemical structures** linked to public chemical identifiers; the identity/physical form/stereochemistry of actual toxicity test standards is **not independently confirmed**.
+- **11 distinct route hypotheses** with original environmental formation or field-pathway references, or explicit negative/unresolved evidence flags.
+- **19 unique provisional assay comparisons** in the reviewer queue: 6 earlier priority records, 9 additional nonduplicate Mount (2025) assay records, and 4 Xiong (2023) chemical pairs.
+- **Three conditional Xiong molar ratios** can be computed from proposed neutral molecular structures; they are not approved scientific labels. M-acetaminophen remains chemically unresolved.
+- **Zero independent reviewer approvals** and **no validated empirical parent-product prediction model**.
+
+### Start here
+
+- [Reference chemical identity registry](data/chemical_identity_reference_NOT_ASSAY_APPROVED.csv)
+- [Environmental transformation pathway ledger](data/environmental_pathway_evidence_11_routes_UNAPPROVED.csv)
+- [Independent toxicology review guide](review/INDEPENDENT_REVIEW_INSTRUCTIONS.md)
+- [Blank route reviewer template](review/route_adjudication_TEMPLATE_BLANK.csv)
+- [Blank observation reviewer template](review/observation_adjudication_TEMPLATE_BLANK.csv)
+- [New toxicity-study recovery queue](data/independent_study_discovery_queue.csv)
+- [Open evidence-adjudication issue](https://github.com/kiran978/TransHazard/issues/1)
+
+Run reference-structure and route QA locally with:
+```bash
+python src/transhazard/identity_review.py --report outputs/identity_pathway_gate.json
+python src/transhazard/evidence_audit.py --report outputs/expanded_evidence_audit.json
+python -m unittest discover -s tests -v
+```
+
+**No raw publications, signed reviewer records or sensitive data are redistributed through the public repository.**
