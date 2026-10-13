@@ -1,0 +1,4 @@
+route_id,published_primary_data_sufficient_Y_N,external_scientist_decision_ACCEPT_HOLD_EXCLUDE,external_scientist_reason,parent_and_TP_chemical_standard_structure_and_form_verified_Y_N,environmental_transformation_evidence_verified_Y_N,same_assay_duration_endpoint_and_conditions_verified_Y_N,exposure_concentration_basis_verified_Y_N,replicate_fit_censoring_and_uncertainty_verified_Y_N,reviewer_provenance_token,private_signed_record_reference,scientific_review_date,steward_released_Y_N,record_status
+NEW_LI2026_HHCB_LACTONE,,,,,,,,,,,,,PENDING
+NEW_YUAN2023_SFX_X11719474,,,,,,,,,,,,,PENDING
+NEW_YUAN2023_SFX_X11519540,,,,,,,,,,,,,PENDING
